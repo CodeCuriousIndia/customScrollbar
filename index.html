@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ScrollBar</title>
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+    <div class="g-ytsubscribe" data-channelid="UCVicy9GqK2IVkO9KvWt0Suw" data-layout="full" data-theme="dark" data-count="default"></div>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .box {
+            width: 200px;
+            height: 400px;
+            overflow: auto;
+            color: white;
+            float: left;
+            margin-bottom: 50px;
+
+        }
+
+        .second::-webkit-scrollbar {
+            width: 10px;
+
+        }
+
+        .second::-webkit-scrollbar-track {
+            width: 10px;
+            background-color: rgb(75, 217, 217);
+            border-radius: 10px;
+        }
+
+        .second::-webkit-scrollbar-thumb {
+
+            background-color: brown;
+            border-radius: 10px;
+
+        }
+
+        .third::-webkit-scrollbar {
+            width: 20px;
+
+        }
+
+        .third::-webkit-scrollbar-track {
+            width: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .third::-webkit-scrollbar-thumb {
+
+            background: linear-gradient(red, yellow);
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .forth::-webkit-scrollbar {
+            width: 20px;
+
+        }
+
+        .forth::-webkit-scrollbar-track {
+            width: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .forth::-webkit-scrollbar-thumb {
+
+            background: linear-gradient(green, pink, green);
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .forth::-webkit-scrollbar-thumb:hover {
+
+            background: linear-gradient(pink, green, pink);
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .forth::-webkit-scrollbar-thumb:active {
+
+            background: linear-gradient(rgb(218, 21, 169), rgb(61, 237, 25), rgb(218, 21, 169));
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .fifth::-webkit-scrollbar {
+            width: 40px;
+
+        }
+
+
+        .fifth::-webkit-scrollbar-track {
+            width: 20px;
+            background-color: yellow;
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .fifth::-webkit-scrollbar-thumb {
+
+            background: linear-gradient(lime, Hotpink, lime, Hotpink, lime, Hotpink, lime, Hotpink);
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .fifth::-webkit-scrollbar-thumb:hover {
+
+            background-image: linear-gradient(Hotpink, lime, Hotpink, lime, Hotpink, lime, Hotpink, lime);
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+
+        }
+
+        .sixth::-webkit-scrollbar {
+            width: 20px;
+
+        }
+
+        .sixth::-webkit-scrollbar-track {
+            width: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .sixth::-webkit-scrollbar-thumb {
+
+            background: linear-gradient(rgb(35, 236, 226), rgb(67, 20, 236));
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+
+        }
+
+        .sixth::-webkit-scrollbar-thumb:hover {
+
+            background: linear-gradient(hotpink, gold);
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .sixth::-webkit-scrollbar-thumb:active {
+
+            background: linear-gradient(rgb(21, 57, 218), rgb(25, 237, 202));
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .seventh::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        .seventh::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .seventh::-webkit-scrollbar-thumb {
+            background-color: #9ae86d;
+            border-radius: 10px;
+        }
+
+        .seventh::-webkit-scrollbar-thumb:hover {
+            background-color: red;
+        }
+
+        .seventh::-webkit-scrollbar-button {
+            background-color: #9ae86d;
+            display: block;
+            background-size: 20px;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        .seventh::-webkit-scrollbar-button:hover {
+        background-color: red;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+
+      
+        .seventh::-webkit-scrollbar-button:vertical:decrement {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%235a6268'><polygon points='0,50 100,50 50,0'/></svg>");
+        }
+
+        .seventh::-webkit-scrollbar-button:vertical:increment {
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%235a6268'><polygon points='0,0 100,0 50,50'/></svg>");
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Code Curious: Custom ScrollBar</h1>
+
+
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, odio amet, nesciunt
+        ipsum quos sint praesentium nostrum quidem nisi distinctio, at iure est architecto vel animi! Nobis fugit labore
+        tempora, qui libero accusantium minus veniam ullam quidem recusandae tenetur quae, temporibus, beatae ad. Atque
+        inventore praesentium neque id voluptas cupiditate natus molestiae accusantium facere ipsa, totam ratione aut
+        porro ex. Necessitatibus impedit maxime repellendus laudantium, eveniet sed laborum fuga assumenda enim hic
+        dicta facere reiciendis eos eaque, iste consequatur non quibusdam asperiores molestiae! Adipisci consectetur
+        rerum officia vel cum, assumenda ab nisi, quod maxime tempore ipsum laborum itaque similique.</div>
+
+    <div class="box second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, odio amet,
+        nesciunt ipsum quos sint praesentium nostrum quidem nisi distinctio, at iure est architecto vel animi! Nobis
+        fugit labore tempora, qui libero accusantium minus veniam ullam quidem recusandae tenetur quae, temporibus,
+        beatae ad. Atque inventore praesentium neque id voluptas cupiditate natus molestiae accusantium facere ipsa,
+        totam ratione aut porro ex. Necessitatibus impedit maxime repellendus laudantium, eveniet sed laborum fuga
+        assumenda enim hic dicta facere reiciendis eos eaque, iste consequatur non quibusdam asperiores molestiae!
+        Adipisci consectetur rerum officia vel cum, assumenda ab nisi, quod maxime tempore ipsum laborum itaque
+        similique.</div>
+
+    <div class="box third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, odio amet,
+        nesciunt ipsum quos sint praesentium nostrum quidem nisi distinctio, at iure est architecto vel animi! Nobis
+        fugit labore tempora, qui libero accusantium minus veniam ullam quidem recusandae tenetur quae, temporibus,
+        beatae ad. Atque inventore praesentium neque id voluptas cupiditate natus molestiae accusantium facere ipsa,
+        totam ratione aut porro ex. Necessitatibus impedit maxime repellendus laudantium, eveniet sed laborum fuga
+        assumenda enim hic dicta facere reiciendis eos eaque, iste consequatur non quibusdam asperiores molestiae!
+        Adipisci consectetur rerum officia vel cum, assumenda ab nisi, quod maxime tempore ipsum laborum itaque
+        similique.</div>
+
+    <div class="box forth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, odio amet,
+        nesciunt ipsum quos sint praesentium nostrum quidem nisi distinctio, at iure est architecto vel animi! Nobis
+        fugit labore tempora, qui libero accusantium minus veniam ullam quidem recusandae tenetur quae, temporibus,
+        beatae ad. Atque inventore praesentium neque id voluptas cupiditate natus molestiae accusantium facere ipsa,
+        totam ratione aut porro ex. Necessitatibus impedit maxime repellendus laudantium, eveniet sed laborum fuga
+        assumenda enim hic dicta facere reiciendis eos eaque, iste consequatur non quibusdam asperiores molestiae!
+        Adipisci consectetur rerum officia vel cum, assumenda ab nisi, quod maxime tempore ipsum laborum itaque
+        similique.</div>
+
+    <div class="box fifth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, odio amet,
+        nesciunt ipsum quos sint praesentium nostrum quidem nisi distinctio, at iure est architecto vel animi! Nobis
+        fugit labore tempora, qui libero accusantium minus veniam ullam quidem recusandae tenetur quae, temporibus,
+        beatae ad. Atque inventore praesentium neque id voluptas cupiditate natus molestiae accusantium facere ipsa,
+        totam ratione aut porro ex. Necessitatibus impedit maxime repellendus laudantium, eveniet sed laborum fuga
+        assumenda enim hic dicta facere reiciendis eos eaque, iste consequatur non quibusdam asperiores molestiae!
+        Adipisci consectetur rerum officia vel cum, assumenda ab nisi, quod maxime tempore ipsum laborum itaque
+        similique.</div>
+
+    <div class="box sixth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, odio amet,
+        nesciunt ipsum quos sint praesentium nostrum quidem nisi distinctio, at iure est architecto vel animi! Nobis
+        fugit labore tempora, qui libero accusantium minus veniam ullam quidem recusandae tenetur quae, temporibus,
+        beatae ad. Atque inventore praesentium neque id voluptas cupiditate natus molestiae accusantium facere ipsa,
+        totam ratione aut porro ex. Necessitatibus impedit maxime repellendus laudantium, eveniet sed laborum fuga
+        assumenda enim hic dicta facere reiciendis eos eaque, iste consequatur non quibusdam asperiores molestiae!
+        Adipisci consectetur rerum officia vel cum, assumenda ab nisi, quod maxime tempore ipsum laborum itaque
+        similique.</div>
+
+    <div class="box seventh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, odio amet,
+        nesciunt ipsum quos sint praesentium nostrum quidem nisi distinctio, at iure est architecto vel animi! Nobis
+        fugit labore tempora, qui libero accusantium minus veniam ullam quidem recusandae tenetur quae, temporibus,
+        beatae ad. Atque inventore praesentium neque id voluptas cupiditate natus molestiae accusantium facere ipsa,
+        totam ratione aut porro ex. Necessitatibus impedit maxime repellendus laudantium, eveniet sed laborum fuga
+        assumenda enim hic dicta facere reiciendis eos eaque, iste consequatur non quibusdam asperiores molestiae!
+        Adipisci consectetur rerum officia vel cum, assumenda ab nisi, quod maxime tempore ipsum laborum itaque
+        similique.</div>
+
+</body>
+
+</html>
